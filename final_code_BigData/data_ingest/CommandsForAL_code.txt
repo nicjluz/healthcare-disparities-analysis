@@ -1,0 +1,14 @@
+To start out program:
+
+hdfs dfs -put AH_Provisional_Cancer_Death_Counts_by_Month_and_Year__2020-2021.csv
+
+Make sure all files are in same root dir after upload then run:
+
+spark-shell --deploy-mode client
+:load finalCodeCleanAL.scala
+:load finalCodeAnalyzeAL.scala
+:load finalCodeAL.scala
+Main.main(Array())
+
+To re run, start locally then run:
+rm finalCode*
